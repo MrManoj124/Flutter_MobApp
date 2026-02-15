@@ -14,4 +14,10 @@ public class Base {
 //This will generate a file named `Base.class`, which contains the bytecode for the program
 
 
-//
+//print the integer value of 10
+public class Base { 
+    public static void main(String [] args){
+        int value = 10;
+        System.out.println(value);
+    }
+}
