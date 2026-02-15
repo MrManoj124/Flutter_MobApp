@@ -4,3 +4,14 @@ public class Base {
         System.out.println("Hey Mano");
     }
 }
+
+
+//This is a simple Java program that defines a class named `Base
+// and contains a `main` method, which is the entry point of the program. When executed, it will print "Hey Mano" to the console.
+//To run this program, you would typically save it in a file named `Base.java`, compile it using a Java compiler, and then execute the compiled bytecode.
+//To compile the program, you can use the command:
+//javac Base.java
+//This will generate a file named `Base.class`, which contains the bytecode for the program
+
+
+//
