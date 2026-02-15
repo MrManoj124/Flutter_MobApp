@@ -21,3 +21,13 @@ public class Base {
         System.out.println(value);
     }
 }
+
+
+//Print Arithmatic operations with 2 numbers
+public class Base { 
+    public static void main(String [] args){
+        int num1 = 10;
+        int num2 = 5;
+
+       }
+}
