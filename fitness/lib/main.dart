@@ -25,7 +25,12 @@ class IronVaultApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    throw UnimplementedError();
+    return MaterialApp(
+      title: 'IronVault',
+      debugShowCheckedModeBanner: false,
+      theme: AppTheme.dark,
+      home: const AppShell(),
+    );
   }
 }
 
