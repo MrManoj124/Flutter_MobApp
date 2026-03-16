@@ -20,7 +20,7 @@ void main() {
 }
 
 class IronVaultApp extends StatelessWidget{
- 
+  const IronVaultApp({super.key});
 }
 
 /*class MyApp extends StatelessWidget {
