@@ -8,6 +8,7 @@ void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
   statusBarColor: Colors.transparent,
   statusBarIconBrightness: Brightness.light,
+  statusBarBrightness: Brightness.dark,
   ));
 }
 
