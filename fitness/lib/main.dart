@@ -16,9 +16,12 @@ void main() {
     DeviceOrientation.portraitDown,
   ]);
 
-  runApp(const IronVaultApp())
+  runApp(const IronVaultApp());
 }
 
+class IronVaultApp extends StatelessWidget{
+ 
+}
 
 /*class MyApp extends StatelessWidget {
   const MyApp({super.key});
