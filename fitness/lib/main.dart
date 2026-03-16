@@ -10,6 +10,10 @@ void main() {
   statusBarIconBrightness: Brightness.light,
   statusBarBrightness: Brightness.dark,
   ));
+
+  SystemChrome.setPreferredOrientations([
+
+  ]);
 }
 
 
