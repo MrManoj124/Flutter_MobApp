@@ -18,6 +18,7 @@ class HomeScreen extends StatelessWidget{
           physics: const BouncingScrollPhysics(),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
     )    
   }
 }
