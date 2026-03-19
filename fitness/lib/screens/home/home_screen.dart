@@ -36,6 +36,7 @@ class HomeScreen extends StatelessWidget{
                 StatCell(value: '${user.todayKcal}', label: 'Kcal'),
                 StatCell(value: '${user.weeklyGoalPercent}%', label: 'Goal'),
               ]),
+              const SizedBox(height: 14),
     )    
   }
 }
