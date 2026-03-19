@@ -46,6 +46,26 @@ class HomeScreen extends StatelessWidget{
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
+                     Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text('Today\'s Session'.toUpperCase(),
+                                    style: AppTextStyles.eyebrow()),
+                                const SizedBox(height: 4),
+                                Text(session.name,
+                                    style: AppTextStyles.cardTitle(size: 18)),
+                                const SizedBox(height: 3),
+                                Text(
+                                  '${session.focus} · ${session.duration}',
+                                  style: AppTextStyles.body(),
+                                ),
+                              ],
+                            ),
+                          ), 
     )    
   }
 }
