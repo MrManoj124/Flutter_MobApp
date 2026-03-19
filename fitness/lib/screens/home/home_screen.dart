@@ -19,6 +19,13 @@ class HomeScreen extends StatelessWidget{
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              // ── Hero header ──────────────────────────────
+              ScreenHeader(
+                eyebrow: 'Good Morning',
+                title: user.name,
+                subtitle: const GoldPill('Elite Member'),
+                trailing: AvatarRing(emoji: '💪'),
+              ),
     )    
   }
 }
