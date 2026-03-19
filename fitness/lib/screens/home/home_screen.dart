@@ -11,6 +11,8 @@ class HomeScreen extends StatelessWidget{
     final user = mockUser;
     final session = todaySession;
 
-    
+    return Scaffold(
+      
+    )    
   }
 }
