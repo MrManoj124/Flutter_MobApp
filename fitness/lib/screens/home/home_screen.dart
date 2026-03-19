@@ -12,7 +12,7 @@ class HomeScreen extends StatelessWidget{
     final session = todaySession;
 
     return Scaffold(
-      
+      backgroundColor: AppColors.black,
     )    
   }
 }
