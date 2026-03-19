@@ -37,6 +37,15 @@ class HomeScreen extends StatelessWidget{
                 StatCell(value: '${user.weeklyGoalPercent}%', label: 'Goal'),
               ]),
               const SizedBox(height: 14),
+
+               // ── Today's session card ─────────────────────
+              LuxCard(
+                margin: const EdgeInsets.symmetric(horizontal: 16),
+                child: Padding(
+                  padding: const EdgeInsets.all(14),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
     )    
   }
 }
