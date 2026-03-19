@@ -26,6 +26,16 @@ class HomeScreen extends StatelessWidget{
                 subtitle: const GoldPill('Elite Member'),
                 trailing: AvatarRing(emoji: '💪'),
               ),
+               GoldHairline(),
+
+              const SizedBox(height: 14),
+
+               // ── Stats strip ──────────────────────────────
+              StatStrip(cells: [
+                StatCell(value: '${user.streakDays}', label: 'Streak'),
+                StatCell(value: '${user.todayKcal}', label: 'Kcal'),
+                StatCell(value: '${user.weeklyGoalPercent}%', label: 'Goal'),
+              ]),
     )    
   }
 }
