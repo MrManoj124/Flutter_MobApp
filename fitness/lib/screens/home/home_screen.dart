@@ -66,6 +66,8 @@ class HomeScreen extends StatelessWidget{
                               ],
                             ),
                           ), 
+                          GoldPill('Day ${session.dayNumber}'),
+                        ],
     )    
   }
 }
