@@ -68,6 +68,14 @@ class HomeScreen extends StatelessWidget{
                           ), 
                           GoldPill('Day ${session.dayNumber}'),
                         ],
+                        ),
+                      const SizedBox(height: 12),
+                      GoldProgressBar(
+                        value: session.progress,
+                        leftLabel: 'Progress',
+                        rightLabel:
+                            '${session.completedCount} / ${session.exercises.length}',
+                      ),
     )    
   }
 }
