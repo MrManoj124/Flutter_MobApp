@@ -4,5 +4,8 @@ import '../../data/mock_data.dart';
 import '../../widgets/luxury_widgets.dart';
 
 class HomeScreen extends StatelessWidget{
+  const HomeScreen({super.key});
+
+  @override
   
 }
