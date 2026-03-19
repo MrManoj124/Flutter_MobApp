@@ -76,6 +76,17 @@ class HomeScreen extends StatelessWidget{
                         rightLabel:
                             '${session.completedCount} / ${session.exercises.length}',
                       ),
+                      const SizedBox(height: 12),
+                      GoldButton(
+                        label: 'Continue →',
+                        onTap: () {},
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+
+              const SizedBox(height: 12),
     )    
   }
 }
