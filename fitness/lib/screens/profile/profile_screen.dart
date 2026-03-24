@@ -70,3 +70,12 @@ class ProfileScreen extends StatelessWidget {
                               .toUpperCase(),
                           style: AppTextStyles.eyebrow(size: 9),
                         ),
+                        const SizedBox(height: 14),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            GoldButton(
+                              label: 'Edit Profile',
+                              verticalPadding: 8,
+                              onTap: () {},
+                            ),
