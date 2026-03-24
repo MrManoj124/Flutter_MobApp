@@ -91,7 +91,9 @@ class HomeScreen extends StatelessWidget{
               // ── Section header ──────────────
               Padding(
                 padding : const EdgeInsets.fromLTRB(16, 4, 16, 8),
-                
+                child : Text('Featured'.toLowerCase(),
+                    style: AppTextStyles.eyebrow()),
+                )
               )
     )    
   }
