@@ -95,3 +95,15 @@ class ProfileScreen extends StatelessWidget {
 
               GoldHairline(),
               const SizedBox(height: 14),
+
+               // ── Stats ────────────────────────────────────
+              StatStrip(cells: [
+                StatCell(
+                    value: '${user.totalSessions}', label: 'Sessions'),
+                StatCell(
+                    value: '${user.streakDays}', label: 'Streak'),
+                StatCell(
+                    value:
+                        '${(user.totalKcal / 1000).toStringAsFixed(1)}k',
+                    label: 'Kcal'),
+              ]),
