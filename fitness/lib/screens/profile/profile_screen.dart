@@ -25,4 +25,12 @@ class ProfileScreen extends StatelessWidget {
                     top: 0, left: 0, right: 0,
                     child: Container(
                       height: 180,
+                       decoration: BoxDecoration(
+                        gradient: RadialGradient(
+                          center: Alignment.topCenter,
+                          radius: 1.2,
+                          colors: [
+                            AppColors.gold.withOpacity(0.06),
+                            Colors.transparent,
+                          ],
   }
