@@ -41,3 +41,10 @@ class ProfileScreen extends StatelessWidget {
                     padding: const EdgeInsets.fromLTRB(16, 24, 16, 20),
                     child: Column(
                       children: [
+                        // Big avatar
+                        Container(
+                          width: 72, height: 72,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: AppColors.surface2,
+                            border: Border.all(
