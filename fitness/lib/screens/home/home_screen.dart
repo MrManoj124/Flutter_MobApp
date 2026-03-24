@@ -96,7 +96,7 @@ class HomeScreen extends StatelessWidget{
               ),
               //=====Articles cards=====
               ...mockArticles.map(article) => padding(
-                
+                padding : const EdgeInsets.only(bottom : 10)
               )
     )    
   }
