@@ -96,7 +96,10 @@ class HomeScreen extends StatelessWidget{
               ),
               //=====Articles cards=====
               ...mockArticles.map(article) => padding(
-                padding : const EdgeInsets.only(bottom : 10)
+                padding : const EdgeInsets.only(bottom : 10),
+                  child: LuxCard(
+                      margin: const EdgeInsets.symmetric(horizontal: 16),
+                      
               )
     )    
   }
