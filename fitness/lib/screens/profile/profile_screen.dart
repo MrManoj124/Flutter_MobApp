@@ -79,3 +79,8 @@ class ProfileScreen extends StatelessWidget {
                               verticalPadding: 8,
                               onTap: () {},
                             ),
+                            const SizedBox(width: 10),
+                            GoldGhostButton(
+                              label: 'Share',
+                              verticalPadding: 8,
+                              onTap: () {},
