@@ -120,7 +120,17 @@ class HomeScreen extends StatelessWidget{
                             Expanded(
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                
+                                children: [
+                                  Row(
+                                    children: [
+                                      Text(article.category.toUpperCase(),
+                                          style: AppTextStyles.eyebrow(size: 8)),
+                                      if (article.isNew) ...[
+                                        const SizedBox(width: 6),
+                                        const GoldPill('New'),
+                                      ]
+                                    ],
+                                  ),
               )
     )    
   }
