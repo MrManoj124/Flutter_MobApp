@@ -54,3 +54,10 @@ class ProfileScreen extends StatelessWidget {
                                 color: AppColors.gold.withOpacity(0.15),
                                 blurRadius: 24,
                               )
+                            ],
+                          ),
+                          child: const Center(
+                            child: Text('💪',
+                                style: TextStyle(fontSize: 30)),
+                          ),
+                        ),
