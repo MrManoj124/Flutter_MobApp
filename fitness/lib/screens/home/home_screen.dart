@@ -90,10 +90,13 @@ class HomeScreen extends StatelessWidget{
 
               // ── Section header ──────────────
               Padding(
-                padding : const EdgeInsets.fromLTRB(16, 4, 16, 8),
-                child : Text('Featured'.toLowerCase(),
+                padding: const EdgeInsets.fromLTRB(16, 4, 16, 8),
+                child: Text('Featured'.toUpperCase(),
                     style: AppTextStyles.eyebrow()),
-                )
+              ),
+              //=====Articles cards=====
+              ...mockArticles.map(article) => padding(
+                
               )
     )    
   }
