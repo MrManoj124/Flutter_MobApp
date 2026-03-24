@@ -99,7 +99,8 @@ class HomeScreen extends StatelessWidget{
                 padding : const EdgeInsets.only(bottom : 10),
                   child: LuxCard(
                       margin: const EdgeInsets.symmetric(horizontal: 16),
-                      
+                      child: Padding(
+                        padding: const EdgeInsets.all(14),
               )
     )    
   }
