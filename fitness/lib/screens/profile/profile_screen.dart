@@ -37,3 +37,7 @@ class ProfileScreen extends StatelessWidget {
                       ),
                     ),
                   ),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(16, 24, 16, 20),
+                    child: Column(
+                      children: [
