@@ -11,4 +11,5 @@ class ProfileScreen extends StatelessWidget {
     final user = mockUser;
     
     return Scaffold(
+      backgroundColor: AppColors.black,
   }
