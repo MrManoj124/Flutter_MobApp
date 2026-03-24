@@ -3,11 +3,11 @@ import '../../theme/theme.dart';
 import '../../data/mock_data.dart';
 import '../../widgets/luxury_widgets.dart';
 
-class HomeScreen extends StatelessWidget{
+class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     final user = mockUser;
     final session = todaySession;
 
@@ -26,19 +26,21 @@ class HomeScreen extends StatelessWidget{
                 subtitle: const GoldPill('Elite Member'),
                 trailing: AvatarRing(emoji: '💪'),
               ),
-               GoldHairline(),
+
+              GoldHairline(),
 
               const SizedBox(height: 14),
 
-               // ── Stats strip ──────────────────────────────
+              // ── Stats strip ──────────────────────────────
               StatStrip(cells: [
                 StatCell(value: '${user.streakDays}', label: 'Streak'),
                 StatCell(value: '${user.todayKcal}', label: 'Kcal'),
                 StatCell(value: '${user.weeklyGoalPercent}%', label: 'Goal'),
               ]),
+
               const SizedBox(height: 14),
 
-               // ── Today's session card ─────────────────────
+              // ── Today's session card ─────────────────────
               LuxCard(
                 margin: const EdgeInsets.symmetric(horizontal: 16),
                 child: Padding(
@@ -46,7 +48,7 @@ class HomeScreen extends StatelessWidget{
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                     Row(
+                      Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Expanded(
@@ -65,10 +67,10 @@ class HomeScreen extends StatelessWidget{
                                 ),
                               ],
                             ),
-                          ), 
+                          ),
                           GoldPill('Day ${session.dayNumber}'),
                         ],
-                        ),
+                      ),
                       const SizedBox(height: 12),
                       GoldProgressBar(
                         value: session.progress,
@@ -88,16 +90,17 @@ class HomeScreen extends StatelessWidget{
 
               const SizedBox(height: 12),
 
-              // ── Section header ──────────────
+              // ── Section header ───────────────────────────
               Padding(
                 padding: const EdgeInsets.fromLTRB(16, 4, 16, 8),
                 child: Text('Featured'.toUpperCase(),
                     style: AppTextStyles.eyebrow()),
               ),
-              //=====Articles cards=====
-              ...mockArticles.map(article) => padding(
-                padding : const EdgeInsets.only(bottom : 10),
-                  child: LuxCard(
+
+              // ── Article cards ────────────────────────────
+              ...mockArticles.map((article) => Padding(
+                    padding: const EdgeInsets.only(bottom: 10),
+                    child: LuxCard(
                       margin: const EdgeInsets.symmetric(horizontal: 16),
                       child: Padding(
                         padding: const EdgeInsets.all(14),
@@ -138,20 +141,21 @@ class HomeScreen extends StatelessWidget{
                                   Text(article.readTime,
                                       style: AppTextStyles.body(size: 10)),
                                 ],
-                                ),
+                              ),
                             ),
                             const Icon(Icons.chevron_right,
                                 color: AppColors.textMuted, size: 16),
                           ],
-                          ),
+                        ),
                       ),
                     ),
                   )),
 
               const SizedBox(height: 20),
-
+            ],
           ),
         ),
       ),
     );
   }
+}
