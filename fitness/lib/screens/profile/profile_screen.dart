@@ -48,3 +48,9 @@ class ProfileScreen extends StatelessWidget {
                             shape: BoxShape.circle,
                             color: AppColors.surface2,
                             border: Border.all(
+                              color: AppColors.goldBorder, width: 1.5),
+                            boxShadow: [
+                              BoxShadow(
+                                color: AppColors.gold.withOpacity(0.15),
+                                blurRadius: 24,
+                              )
