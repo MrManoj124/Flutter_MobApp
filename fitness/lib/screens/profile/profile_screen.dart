@@ -16,4 +16,5 @@ class ProfileScreen extends StatelessWidget {
         child: SingleChildScrollView(
           physics: const BouncingScrollPhysics(),
           child: Column(
+            children: [
   }
