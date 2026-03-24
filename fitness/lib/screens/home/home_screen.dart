@@ -87,6 +87,11 @@ class HomeScreen extends StatelessWidget{
               ),
 
               const SizedBox(height: 12),
+
+              // ── Section header ──────────────
+              Padding(
+                
+              )
     )    
   }
 }
