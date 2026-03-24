@@ -33,4 +33,7 @@ class ProfileScreen extends StatelessWidget {
                             AppColors.gold.withOpacity(0.06),
                             Colors.transparent,
                           ],
-  }
+                        ),
+                      ),
+                    ),
+                  ),
