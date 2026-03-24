@@ -111,6 +111,10 @@ class HomeScreen extends StatelessWidget{
                                 border: Border.all(color: AppColors.goldBorder),
                                 borderRadius: BorderRadius.circular(10),
                               ),
+                              child: Center(
+                                child: Text(article.emoji,
+                                    style: const TextStyle(fontSize: 20)),
+                              ),
               )
     )    
   }
