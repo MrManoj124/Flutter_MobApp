@@ -64,3 +64,9 @@ class ProfileScreen extends StatelessWidget {
                         const SizedBox(height: 12),
                         Text(user.name.toUpperCase(),
                             style: AppTextStyles.display(size: 24)),
+                            const SizedBox(height: 4),
+                        Text(
+                          '${user.tier} · Since ${user.memberSince}'
+                              .toUpperCase(),
+                          style: AppTextStyles.eyebrow(size: 9),
+                        ),
