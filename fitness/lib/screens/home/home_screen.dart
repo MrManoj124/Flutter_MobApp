@@ -131,6 +131,13 @@ class HomeScreen extends StatelessWidget{
                                       ]
                                     ],
                                   ),
+                                  const SizedBox(height: 3),
+                                  Text(article.title,
+                                      style: AppTextStyles.bodyMedium(size: 12)),
+                                  const SizedBox(height: 2),
+                                  Text(article.readTime,
+                                      style: AppTextStyles.body(size: 10)),
+                                ],
               )
     )    
   }
