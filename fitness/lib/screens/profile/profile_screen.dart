@@ -92,3 +92,6 @@ class ProfileScreen extends StatelessWidget {
                   ),
                 ],
               ),
+
+              GoldHairline(),
+              const SizedBox(height: 14),
