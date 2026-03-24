@@ -115,6 +115,12 @@ class HomeScreen extends StatelessWidget{
                                 child: Text(article.emoji,
                                     style: const TextStyle(fontSize: 20)),
                               ),
+                            ),
+                            const SizedBox(width: 12),
+                            Expanded(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                
               )
     )    
   }
