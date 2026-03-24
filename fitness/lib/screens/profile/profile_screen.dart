@@ -17,4 +17,7 @@ class ProfileScreen extends StatelessWidget {
           physics: const BouncingScrollPhysics(),
           child: Column(
             children: [
+              // ── Profile hero ───
+              Stack(
+                children: [
   }
