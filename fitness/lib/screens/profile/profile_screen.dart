@@ -10,4 +10,5 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context){
     final user = mockUser;
     
+    return Scaffold(
   }
