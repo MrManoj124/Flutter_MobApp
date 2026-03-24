@@ -143,6 +143,12 @@ class HomeScreen extends StatelessWidget{
                             const Icon(Icons.chevron_right,
                                 color: AppColors.textMuted, size: 16),
                           ],
+                          ),
+                      ),
+                    ),
+                  )),
+
+              const SizedBox(height: 20),
               )
     )    
   }
