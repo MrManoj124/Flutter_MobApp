@@ -61,3 +61,6 @@ class ProfileScreen extends StatelessWidget {
                                 style: TextStyle(fontSize: 30)),
                           ),
                         ),
+                        const SizedBox(height: 12),
+                        Text(user.name.toUpperCase(),
+                            style: AppTextStyles.display(size: 24)),
