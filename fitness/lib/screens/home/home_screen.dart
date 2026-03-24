@@ -138,6 +138,11 @@ class HomeScreen extends StatelessWidget{
                                   Text(article.readTime,
                                       style: AppTextStyles.body(size: 10)),
                                 ],
+                                ),
+                            ),
+                            const Icon(Icons.chevron_right,
+                                color: AppColors.textMuted, size: 16),
+                          ],
               )
     )    
   }
