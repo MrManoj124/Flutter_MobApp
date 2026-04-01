@@ -138,3 +138,10 @@ class ProfileScreen extends StatelessWidget {
                 label: 'Settings & Preferences',
                 onTap: () {},
               ),
+              _MenuItem(
+                emoji: '🚪',
+                label: 'Sign Out',
+                onTap: () {},
+                isDanger: true,
+              ),
+
