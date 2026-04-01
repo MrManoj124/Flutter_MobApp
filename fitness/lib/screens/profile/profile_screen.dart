@@ -146,6 +146,11 @@ class ProfileScreen extends StatelessWidget {
               ),
 
               const SizedBox(height : 20),
-
+              // ── Footer ───────────────────────────────────
+              Padding(
+                padding : const EdgeInsets.symmetric(vertical : 8),
+                child : Text(
+                  'IRONVAULT . '
+                )
               
 
