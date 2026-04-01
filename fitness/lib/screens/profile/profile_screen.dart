@@ -133,3 +133,8 @@ class ProfileScreen extends StatelessWidget {
                 label: 'Notifications',
                 onTap: () {},
               ),
+              _MenuItem(
+                emoji: '⚙️',
+                label: 'Settings & Preferences',
+                onTap: () {},
+              ),
