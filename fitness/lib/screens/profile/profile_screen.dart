@@ -179,4 +179,7 @@ class _MenuItem extends StatelessWidget {
     this.onTap,
     this.isDanger = false,
   });
+
+  @override
+  Widget build(BuildContext context){})
 }
