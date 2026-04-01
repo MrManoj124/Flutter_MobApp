@@ -107,3 +107,13 @@ class ProfileScreen extends StatelessWidget {
                         '${(user.totalKcal / 1000).toStringAsFixed(1)}k',
                     label: 'Kcal'),
               ]),
+
+              const SizeBox(height : 16),
+
+              //Menu items
+              _MenuItem(
+                emoji: '📊',
+                label: 'Progress & Analytics',
+                badge: 'New',
+                onTap: () {},
+              )
