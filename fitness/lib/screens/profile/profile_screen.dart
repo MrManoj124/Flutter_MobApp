@@ -184,8 +184,15 @@ class _MenuItem extends StatelessWidget {
   Widget build(BuildContext context){
     return Inkwell(
       onTap: onTap,
-      splashColor : AppColors.goldDim,
-      
+      splashColor: AppColors.goldDim,
+      highlightColor: Colors.transparent,
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+        decoration: const BoxDecoration(
+          border: Border(
+              bottom: BorderSide(color: Color(0x0AFFFFFF))),
+        ),
+        
     )
   })
 }
