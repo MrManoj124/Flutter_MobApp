@@ -149,8 +149,10 @@ class ProfileScreen extends StatelessWidget {
               // ── Footer ───────────────────────────────────
               Padding(
                 padding : const EdgeInsets.symmetric(vertical : 8),
-                child : Text(
-                  'IRONVAULT . '
-                )
+                child: Text(
+                  'IRONVAULT · v1.0.0',
+                  style: AppTextStyles.label(
+                      size: 9, color: AppColors.textDim),
+                ),
               
 
