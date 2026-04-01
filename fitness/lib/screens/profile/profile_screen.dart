@@ -172,5 +172,11 @@ class _MenuItem extends StatelessWidget {
   final VoidCallBack? onTap;
   final bool isDanger;
 
-  
+  const _MenuItem({
+    required this.emoji,
+    required this.label,
+    this.badge,
+    this.onTap,
+    this.isDanger = false,
+  });
 }
