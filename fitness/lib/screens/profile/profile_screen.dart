@@ -192,7 +192,13 @@ class _MenuItem extends StatelessWidget {
           border: Border(
               bottom: BorderSide(color: Color(0x0AFFFFFF))),
         ),
-        
+        child : Row(
+          children : [
+            //Icon badge
+            Container(,
+            )
+          ]
+          )
     )
   })
 }
