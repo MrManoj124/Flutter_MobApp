@@ -154,5 +154,13 @@ class ProfileScreen extends StatelessWidget {
                   style: AppTextStyles.label(
                       size: 9, color: AppColors.textDim),
                 ),
-              
+              ),
 
+              const SizedBox(height : 16),
+            ],
+          ),
+        ),
+      ),
+    ),
+  }
+}
