@@ -145,3 +145,7 @@ class ProfileScreen extends StatelessWidget {
                 isDanger: true,
               ),
 
+              const SizedBox(height : 20),
+
+              
+
