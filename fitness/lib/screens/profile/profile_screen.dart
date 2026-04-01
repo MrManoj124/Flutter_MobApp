@@ -128,3 +128,8 @@ class ProfileScreen extends StatelessWidget {
                 label: 'Order History',
                 onTap: () {},
               ),
+              _MenuItem(
+                emoji: '🔔',
+                label: 'Notifications',
+                onTap: () {},
+              ),
