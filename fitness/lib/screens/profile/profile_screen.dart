@@ -166,5 +166,11 @@ class ProfileScreen extends StatelessWidget {
 }
 
 class _MenuItem extends StatelessWidget {
+  final String emoji;
+  final String label;
+  final String ? badge;
+  final VoidCallBack? onTap;
+  final bool isDanger;
+
   
 }
