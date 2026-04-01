@@ -117,4 +117,9 @@ class ProfileScreen extends StatelessWidget {
                 badge: 'New',
                 onTap: () {},
               )
-              
+              _MenuItem(
+                emoji: '🏅',
+                label: 'Achievements',
+                badge: '12',
+                onTap: () {},
+              ),
