@@ -123,3 +123,8 @@ class ProfileScreen extends StatelessWidget {
                 badge: '12',
                 onTap: () {},
               ),
+              _MenuItem(
+                emoji: '🛒',
+                label: 'Order History',
+                onTap: () {},
+              ),
