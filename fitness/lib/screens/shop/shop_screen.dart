@@ -177,6 +177,24 @@ class _ProductCard extends StatelessWidget{
   final VoidCallback onAdd;
   const _ProductCard(
       {required this.product, required this.inCart, required this.onAdd});
+
+  @override
+  Widget build(BuildContext context) {
+    return LuxCard(
+      margin: EdgeInsets.zero,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // Image area
+          Container(
+            height: 80,
+            width: double.infinity,
+            color: product.imageBackground,
+            child: Center(
+              child: Text(product.emoji,
+                  style: const TextStyle(fontSize: 32)),
+            ),
+          ),
 }
 
 
