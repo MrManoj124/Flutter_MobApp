@@ -172,7 +172,11 @@ class _ShopScreenState extends State<ShopScreen>{
 }
 
 class _ProductCard extends StatelessWidget{
-  
+  final Product product;
+  final bool inCart;
+  final VoidCallback onAdd;
+  const _ProductCard(
+      {required this.product, required this.inCart, required this.onAdd});
 }
 
 
