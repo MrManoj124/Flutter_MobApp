@@ -29,4 +29,8 @@ class _ShopScreenState extends State<ShopScreen>{
 
    @override
   Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: AppColors.black,
+      body: SafeArea(
+
 }
