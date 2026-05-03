@@ -60,5 +60,14 @@ class _ShopScreenState extends State<ShopScreen>{
                                     style: AppTextStyles.label(
                                         size: 8, color: AppColors.black)),
                               ),
+                               ),
+                          ),
+                      ],
+                    ),
+                  ),
+                  GoldHairline(),
+                  const SizedBox(height: 12),
+
+                  
 
 }
