@@ -257,12 +257,23 @@ class _ProductCard extends StatelessWidget{
                                 ]
                               : null,
                         ),
-
+                        child: Center(
+                          child: Icon(
+                            inCart ? Icons.check : Icons.add,
+                            color: AppColors.gold,
+                            size: 14,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
 }
 
-
-                      
-
-
-
-}
