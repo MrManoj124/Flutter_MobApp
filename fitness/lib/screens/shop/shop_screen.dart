@@ -195,6 +195,19 @@ class _ProductCard extends StatelessWidget{
                   style: const TextStyle(fontSize: 32)),
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(10, 8, 10, 10),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(product.name,
+                    style: AppTextStyles.bodyMedium(size: 11)
+                        .copyWith(
+                            textBaseline: TextBaseline.alphabetic)),
+                const SizedBox(height: 1),
+                Text(product.subtitle,
+                    style: AppTextStyles.body(size: 9)),
+                const SizedBox(height: 8),
 }
 
 
