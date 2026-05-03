@@ -4,3 +4,7 @@ import 'package:flutter/material.dart';
 // import '../../models/models.dart';
 // import '../../widgets/luxury_widgets.dart';
 
+class ShopScreen extends StatefulWidget{
+  const ShopScreen({super.key});
+
+  }
