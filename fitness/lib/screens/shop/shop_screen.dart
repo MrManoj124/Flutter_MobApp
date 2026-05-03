@@ -171,6 +171,10 @@ class _ShopScreenState extends State<ShopScreen>{
   }
 }
 
+class _ProductCard extends StatelessWidget{
+  
+}
+
 
                       
 
