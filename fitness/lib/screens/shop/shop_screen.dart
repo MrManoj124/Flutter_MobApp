@@ -137,6 +137,24 @@ class _ShopScreenState extends State<ShopScreen>{
               ),
             ),
 
+            // ── Product grid ─────────────────────────────
+            SliverPadding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              sliver: SliverGrid(
+                delegate: SliverChildBuilderDelegate(
+                  (context, i) => _ProductCard(
+                    product: _filtered[i],
+                    inCart: _cartIds.contains(_filtered[i].id),
+                    onAdd: () => setState(() {
+                      final id = _filtered[i].id;
+                      _cartIds.contains(id)
+                          ? _cartIds.remove(id)
+                          : _cartIds.add(id);
+                    }),
+                  ),
+                  childCount: _filtered.length,
+                ),
+
 
                       
 
