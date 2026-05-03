@@ -26,4 +26,7 @@ class _ShopScreenState extends State<ShopScreen>{
     (ProductCategory.apparel, 'Apparel'),
     (ProductCategory.sale, 'Sale'),
   ];
+
+   @override
+  Widget build(BuildContext context) {
 }
