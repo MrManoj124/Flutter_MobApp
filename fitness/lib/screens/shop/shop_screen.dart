@@ -154,6 +154,22 @@ class _ShopScreenState extends State<ShopScreen>{
                   ),
                   childCount: _filtered.length,
                 ),
+                gridDelegate:
+                    const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                  crossAxisSpacing: 10,
+                  mainAxisSpacing: 10,
+                  childAspectRatio: 0.82,
+                ),
+              ),
+            ),
+            const SliverToBoxAdapter(child: SizedBox(height: 20)),
+          ],
+        ),
+      ),
+    );
+  }
+}
 
 
                       
