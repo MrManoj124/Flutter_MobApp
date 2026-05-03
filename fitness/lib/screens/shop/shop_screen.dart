@@ -79,6 +79,17 @@ class _ShopScreenState extends State<ShopScreen>{
                       border:
                           Border.all(color: const Color(0x12FFFFFF)),
                     ),
+                    child: Row(
+                      children: [
+                        const Icon(Icons.search,
+                            color: AppColors.textMuted, size: 16),
+                        const SizedBox(width: 8),
+                        Text('Search products...',
+                            style: AppTextStyles.body(size: 12)),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: 12),
 
 
 
