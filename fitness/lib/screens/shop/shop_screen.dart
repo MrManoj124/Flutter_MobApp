@@ -38,5 +38,7 @@ class _ShopScreenState extends State<ShopScreen>{
             // ── Header ──────────────────────────────────
             SliverToBoxAdapter(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
 
 }
