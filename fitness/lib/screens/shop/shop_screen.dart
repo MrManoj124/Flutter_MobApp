@@ -95,6 +95,13 @@ class _ShopScreenState extends State<ShopScreen>{
                   SizedBox(
                     height: 32,
                     child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      padding:
+                          const EdgeInsets.symmetric(horizontal: 16),
+                      children: _categories.map((c) {
+                        final isActive = _selected == c.$1;
+
+                      
 
 
 
