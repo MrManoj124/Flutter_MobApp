@@ -223,6 +223,18 @@ class _ProductCard extends StatelessWidget{
                               decorationColor: AppColors.textMuted,
                             ),
                           ),
+                          ShaderMask(
+                          blendMode: BlendMode.srcIn,
+                          shaderCallback: (bounds) =>
+                              AppColors.goldGradient.createShader(bounds),
+                          child: Text(
+                            '\$${product.price.toInt()}',
+                            style: AppTextStyles.price(size: 18),
+                          ),
+                        ),
+                      ],
+                    ),
+
 }
 
 
