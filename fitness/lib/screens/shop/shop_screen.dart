@@ -118,6 +118,25 @@ class _ShopScreenState extends State<ShopScreen>{
                               ),
                               borderRadius: BorderRadius.circular(20),
                             ),
+                            child: Text(
+                              c.$2.toUpperCase(),
+                              style: AppTextStyles.label(
+                                size: 8,
+                                color: isActive
+                                    ? AppColors.gold
+                                    : AppColors.textMuted,
+                              ),
+                            ),
+                          ),
+                        );
+                      }).toList(),
+                       ),
+                  ),
+                  const SizedBox(height: 14),
+                ],
+              ),
+            ),
+
 
                       
 
