@@ -16,5 +16,6 @@ class _ShopScreenState extends State<ShopScreen>{
   final List<String> _cartIds = [];
 
   List<Product> get _filtered => _selected == ProductCategory.all
-  
+? mockProducts
+      : mockProducts.where((p) => p.category == _selected).toList();
 }
