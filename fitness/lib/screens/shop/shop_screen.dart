@@ -234,6 +234,29 @@ class _ProductCard extends StatelessWidget{
                         ),
                       ],
                     ),
+                    GestureDetector(
+                      onTap: onAdd,
+                      child: AnimatedContainer(
+                        duration: const Duration(milliseconds: 200),
+                        width: 26,
+                        height: 26,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: inCart
+                              ? AppColors.goldDim
+                              : Colors.transparent,
+                          border:
+                              Border.all(color: AppColors.goldBorder),
+                          boxShadow: inCart
+                              ? [
+                                  BoxShadow(
+                                    color:
+                                        AppColors.gold.withOpacity(0.2),
+                                    blurRadius: 8,
+                                  )
+                                ]
+                              : null,
+                        ),
 
 }
 
