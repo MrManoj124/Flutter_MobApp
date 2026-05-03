@@ -91,6 +91,11 @@ class _ShopScreenState extends State<ShopScreen>{
                   ),
                   const SizedBox(height: 12),
 
+                    // ── Filter chips ───────────────────────
+                  SizedBox(
+                    height: 32,
+                    child: ListView(
+
 
 
 }
