@@ -32,5 +32,8 @@ class _ShopScreenState extends State<ShopScreen>{
     return Scaffold(
       backgroundColor: AppColors.black,
       body: SafeArea(
+        child: CustomScrollView(
+          physics: const BouncingScrollPhysics(),
+          slivers: [
 
 }
