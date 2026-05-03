@@ -12,5 +12,8 @@ class ShopScreen extends StatefulWidget{
 }
 
 class _ShopScreenState extends State<ShopScreen>{
+  ProductCategory _selected = ProductCategory.all;
+  final List<String> _cartIds = [];
+
   
 }
