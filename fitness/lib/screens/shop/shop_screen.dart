@@ -35,5 +35,8 @@ class _ShopScreenState extends State<ShopScreen>{
         child: CustomScrollView(
           physics: const BouncingScrollPhysics(),
           slivers: [
+            // ── Header ──────────────────────────────────
+            SliverToBoxAdapter(
+              
 
 }
