@@ -18,4 +18,12 @@ class _ShopScreenState extends State<ShopScreen>{
   List<Product> get _filtered => _selected == ProductCategory.all
 ? mockProducts
       : mockProducts.where((p) => p.category == _selected).toList();
+  
+  static const _categories = [
+    (ProductCategory.all, 'All'),
+    (ProductCategory.supplements, 'Supps'),
+    (ProductCategory.gear, 'Gear'),
+    (ProductCategory.apparel, 'Apparel'),
+    (ProductCategory.sale, 'Sale'),
+  ];
 }
