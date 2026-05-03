@@ -68,6 +68,18 @@ class _ShopScreenState extends State<ShopScreen>{
                   GoldHairline(),
                   const SizedBox(height: 12),
 
-                  
+                  // ── Search bar ─────────────────────────
+                  Container(
+                    margin: const EdgeInsets.symmetric(horizontal: 16),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 14, vertical: 10),
+                    decoration: BoxDecoration(
+                      color: AppColors.surface2,
+                      borderRadius: BorderRadius.circular(10),
+                      border:
+                          Border.all(color: const Color(0x12FFFFFF)),
+                    ),
+
+
 
 }
