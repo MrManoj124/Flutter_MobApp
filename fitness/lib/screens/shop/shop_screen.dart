@@ -55,5 +55,10 @@ class _ShopScreenState extends State<ShopScreen>{
                                 color: AppColors.gold,
                                 shape: BoxShape.circle,
                               ),
+                              child: Center(
+                                child: Text('${_cartIds.length}',
+                                    style: AppTextStyles.label(
+                                        size: 8, color: AppColors.black)),
+                              ),
 
 }
