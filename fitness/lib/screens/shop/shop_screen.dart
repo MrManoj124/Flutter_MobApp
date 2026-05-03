@@ -37,6 +37,6 @@ class _ShopScreenState extends State<ShopScreen>{
           slivers: [
             // ── Header ──────────────────────────────────
             SliverToBoxAdapter(
-              
+              child: Column(
 
 }
