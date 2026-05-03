@@ -208,6 +208,21 @@ class _ProductCard extends StatelessWidget{
                 Text(product.subtitle,
                     style: AppTextStyles.body(size: 9)),
                 const SizedBox(height: 8),
+                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        if (product.isOnSale &&
+                            product.originalPrice != null)
+                          Text(
+                            '\$${product.originalPrice!.toInt()}',
+                            style: AppTextStyles.body(size: 9).copyWith(
+                              decoration: TextDecoration.lineThrough,
+                              decorationColor: AppColors.textMuted,
+                            ),
+                          ),
 }
 
 
