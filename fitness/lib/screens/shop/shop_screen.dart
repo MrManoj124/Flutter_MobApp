@@ -100,6 +100,13 @@ class _ShopScreenState extends State<ShopScreen>{
                           const EdgeInsets.symmetric(horizontal: 16),
                       children: _categories.map((c) {
                         final isActive = _selected == c.$1;
+                        return GestureDetector(
+                          onTap: () =>
+                              setState(() => _selected = c.$1),
+                          child: Container(
+                            margin: const EdgeInsets.only(right: 8),
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 14, vertical: 5),
 
                       
 
