@@ -40,5 +40,20 @@ class _ShopScreenState extends State<ShopScreen>{
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                   ScreenHeader(
+                    eyebrow: 'Curated for You',
+                    title: 'The Vault',
+                    trailing: Stack(
+                      children: [
+                        AvatarRing(emoji: '🛒'),
+                        if (_cartIds.isNotEmpty)
+                          Positioned(
+                            top: 0, right: 0,
+                            child: Container(
+                              width: 14, height: 14,
+                              decoration: const BoxDecoration(
+                                color: AppColors.gold,
+                                shape: BoxShape.circle,
+                              ),
 
 }
