@@ -107,6 +107,17 @@ class _ShopScreenState extends State<ShopScreen>{
                             margin: const EdgeInsets.only(right: 8),
                             padding: const EdgeInsets.symmetric(
                                 horizontal: 14, vertical: 5),
+                                decoration: BoxDecoration(
+                              color: isActive
+                                  ? AppColors.goldDim
+                                  : AppColors.surface2,
+                              border: Border.all(
+                                color: isActive
+                                    ? AppColors.goldBorder
+                                    : const Color(0x0FFFFFFF),
+                              ),
+                              borderRadius: BorderRadius.circular(20),
+                            ),
 
                       
 
