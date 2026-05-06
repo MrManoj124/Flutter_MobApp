@@ -45,3 +45,8 @@ class TrainScreen extends StatelessWidget {
 class _ProgramCard extends StatelessWidget {
   final Program program;
   const _ProgramCard({required this.program});
+
+  @override
+  Widget build(BuildContext context) {
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(12),
