@@ -17,3 +17,11 @@ class TrainScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [ 
+               // ── Header ──────────────────────────────────
+              ScreenHeader(
+                eyebrow: 'Your Programs',
+                title: 'Train',
+                trailing: AvatarRing(emoji: '🔥'),
+              ),
+              GoldHairline(),
+              const SizedBox(height: 16),
