@@ -25,3 +25,10 @@ class TrainScreen extends StatelessWidget {
               ),
               GoldHairline(),
               const SizedBox(height: 16),
+
+              // ── Program cards ────────────────────────────
+              ...mockPrograms.map((p) => Padding(
+                    padding: const EdgeInsets.only(
+                        left: 16, right: 16, bottom: 12),
+                    child: _ProgramCard(program: p),
+                  )),
