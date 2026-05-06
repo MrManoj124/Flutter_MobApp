@@ -34,3 +34,14 @@ class TrainScreen extends StatelessWidget {
                   )),
 
                   const SizedBox(height:20);
+                  ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _ProgramCard extends StatelessWidget {
+  final Program program;
+  const _ProgramCard({required this.program});
