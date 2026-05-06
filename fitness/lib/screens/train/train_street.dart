@@ -32,3 +32,5 @@ class TrainScreen extends StatelessWidget {
                         left: 16, right: 16, bottom: 12),
                     child: _ProgramCard(program: p),
                   )),
+
+                  const SizedBox(height:20);
