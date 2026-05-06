@@ -3,3 +3,6 @@ import 'package:flutter/material.dart';
 // import '../../data/mock_data.dart';
 // import '../../models/models.dart';
 // import '../../widgets/luxury_widgets.dart';
+
+class TrainScreen extends StatelessWidget {
+  const TrainScreen({super.key});
