@@ -50,3 +50,8 @@ class _ProgramCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return ClipRRect(
       borderRadius: BorderRadius.circular(12),
+      child: Container(
+        decoration: BoxDecoration(
+          border: Border.all(color: const Color(0x0FFFFFFF)),
+          borderRadius: BorderRadius.circular(12),
+        ),
