@@ -178,3 +178,12 @@ class _ProgramCard extends StatelessWidget {
 class _SessionDetailSheet extends StatelessWidget {
   final WorkoutSession session;
   const _SessionDetailSheet({required this.session});
+
+@override
+  Widget build(BuildContext context) {
+    return Container(
+      height: MediaQuery.of(context).size.height * 0.75,
+      decoration: const BoxDecoration(
+        color: AppColors.surface,
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
