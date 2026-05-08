@@ -137,3 +137,16 @@ class _ProgramCard extends StatelessWidget {
                         : 'Not started',
                     style: AppTextStyles.body(size: 10),
                   ),
+                   program.isActive
+                      ? GoldButton(
+                          label: 'Resume',
+                          verticalPadding: 6,
+                          horizontalPadding: 14,
+                          onTap: () => _showSessionDetail(context, program),
+                        )
+                      : GoldGhostButton(
+                          label: 'Begin',
+                          verticalPadding: 6,
+                          horizontalPadding: 14,
+                          onTap: () {},
+                        ),
