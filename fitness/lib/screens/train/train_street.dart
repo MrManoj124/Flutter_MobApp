@@ -291,3 +291,10 @@ class _SessionDetailSheet extends StatelessWidget {
                                   : AppColors.text,
                             )),
                       ),
+                       Text('${ex.sets}×${ex.reps}',
+                          style: AppTextStyles.label(size: 9)),
+                      const SizedBox(width: 8),
+                      Text(ex.rest,
+                          style: AppTextStyles.label(
+                              size: 9, color: AppColors.textDim)),
+                    ],
