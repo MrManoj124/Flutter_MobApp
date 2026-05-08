@@ -87,3 +87,14 @@ class _ProgramCard extends StatelessWidget {
                                 Text(program.description,
                                     style: AppTextStyles.body(size: 11)),
                               ],
+                               ),
+                          ),
+                          const SizedBox(width: 8),
+                          GoldPill(
+                            program.isActive
+                                ? 'Active'
+                                : '${program.totalWeeks} Wks',
+                            dim: !program.isActive,
+                          ),
+                        ],
+                      ),
