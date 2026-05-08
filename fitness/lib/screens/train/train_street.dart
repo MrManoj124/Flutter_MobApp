@@ -245,3 +245,12 @@ class _SessionDetailSheet extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(
                       horizontal: 14, vertical: 12),
                   decoration: BoxDecoration(
+                    color: ex.completed
+                        ? AppColors.goldDim
+                        : AppColors.surface2,
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(
+                      color: ex.completed
+                          ? AppColors.goldBorder
+                          : const Color(0x0AFFFFFF),
+                    ),
