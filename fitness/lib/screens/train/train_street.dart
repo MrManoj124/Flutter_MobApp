@@ -231,3 +231,17 @@ class _SessionDetailSheet extends StatelessWidget {
           GoldHairline(
               margin: const EdgeInsets.symmetric(horizontal: 20)),
           const SizedBox(height: 4),
+
+           // Exercise list
+          Expanded(
+            child: ListView.builder(
+              padding: const EdgeInsets.symmetric(vertical: 8),
+              itemCount: session.exercises.length,
+              itemBuilder: (_, i) {
+                final ex = session.exercises[i];
+                return Container(
+                  margin: const EdgeInsets.symmetric(
+                      horizontal: 16, vertical: 4),
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 14, vertical: 12),
+                  decoration: BoxDecoration(
