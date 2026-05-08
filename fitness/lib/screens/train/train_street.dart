@@ -55,3 +55,7 @@ class _ProgramCard extends StatelessWidget {
           border: Border.all(color: const Color(0x0FFFFFFF)),
           borderRadius: BorderRadius.circular(12),
         ),
+         child: Column(
+          children: [
+            // ── Coloured hero ────────────────────────────
+            
