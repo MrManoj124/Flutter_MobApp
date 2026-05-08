@@ -254,3 +254,18 @@ class _SessionDetailSheet extends StatelessWidget {
                           ? AppColors.goldBorder
                           : const Color(0x0AFFFFFF),
                     ),
+                    ),
+                  child: Row(
+                    children: [
+                      Container(
+                        width: 22, height: 22,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: ex.completed
+                              ? AppColors.gold
+                              : Colors.transparent,
+                          border: Border.all(
+                            color: ex.completed
+                                ? AppColors.gold
+                                : AppColors.goldBorder,
+                          ),
