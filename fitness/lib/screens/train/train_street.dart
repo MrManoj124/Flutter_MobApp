@@ -66,3 +66,8 @@ class _ProgramCard extends StatelessWidget {
                   decoration: BoxDecoration(gradient: program.headerGradient),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Expanded(
