@@ -71,3 +71,19 @@ class _ProgramCard extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  '${program.level} · ${program.daysPerWeek}'
+                                      .toUpperCase(),
+                                  style: AppTextStyles.eyebrow(size: 8),
+                                ),
+                                const SizedBox(height: 4),
+                                Text(program.name,
+                                    style:
+                                        AppTextStyles.cardTitle(size: 20)),
+                                const SizedBox(height: 3),
+                                Text(program.description,
+                                    style: AppTextStyles.body(size: 11)),
+                              ],
