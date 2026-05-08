@@ -130,4 +130,10 @@ class _ProgramCard extends StatelessWidget {
                   const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                
+                children: [
+                  Text(
+                    program.isActive
+                        ? 'Next · Deadlift + Romanian DL'
+                        : 'Not started',
+                    style: AppTextStyles.body(size: 10),
+                  ),
