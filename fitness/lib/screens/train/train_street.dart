@@ -226,3 +226,8 @@ class _SessionDetailSheet extends StatelessWidget {
               ],
             ),
           ),
+
+          const SizedBox(height: 12),
+          GoldHairline(
+              margin: const EdgeInsets.symmetric(horizontal: 20)),
+          const SizedBox(height: 4),
