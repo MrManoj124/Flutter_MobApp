@@ -150,3 +150,11 @@ class _ProgramCard extends StatelessWidget {
                           horizontalPadding: 14,
                           onTap: () {},
                         ),
+                    ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
