@@ -98,3 +98,12 @@ class _ProgramCard extends StatelessWidget {
                           ),
                         ],
                       ),
+                      if (program.isActive) ...[
+                        const SizedBox(height: 12),
+                        GoldProgressBar(
+                          value: program.progress,
+                          leftLabel:
+                              'Week ${program.currentWeek} of ${program.totalWeeks}',
+                          rightLabel:
+                              '${(program.progress * 100).round()}%',
+                        ),
