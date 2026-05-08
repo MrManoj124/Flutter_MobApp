@@ -122,3 +122,12 @@ class _ProgramCard extends StatelessWidget {
                 ),
               ],
             ),
+
+             // ── Footer ───────────────────────────────────
+            Container(
+              color: AppColors.surface,
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                
