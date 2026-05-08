@@ -269,3 +269,13 @@ class _SessionDetailSheet extends StatelessWidget {
                                 ? AppColors.gold
                                 : AppColors.goldBorder,
                           ),
+                          ),
+                        child: ex.completed
+                            ? const Icon(Icons.check,
+                                color: AppColors.black, size: 12)
+                            : Center(
+                                child: Text('${i + 1}',
+                                    style: AppTextStyles.label(
+                                        size: 8,
+                                        color: AppColors.textMuted)),
+                              ),
