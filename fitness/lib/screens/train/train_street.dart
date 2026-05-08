@@ -158,3 +158,7 @@ class _ProgramCard extends StatelessWidget {
       ),
     );
   }
+
+  void _showSessionDetail(BuildContext context, Program program) {
+    if (program.sessions.isEmpty) return;
+    final session = program.sessions[0];
