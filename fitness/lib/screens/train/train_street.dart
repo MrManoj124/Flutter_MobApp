@@ -298,3 +298,8 @@ class _SessionDetailSheet extends StatelessWidget {
                           style: AppTextStyles.label(
                               size: 9, color: AppColors.textDim)),
                     ],
+                    ),
+                );
+              },
+            ),
+          ),
