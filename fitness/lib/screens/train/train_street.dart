@@ -175,3 +175,6 @@ class _ProgramCard extends StatelessWidget {
 // ────────────────────────────────────────────────────────────────
 // SESSION DETAIL BOTTOM SHEET
 // ────────────────────────────────────────────────────────────────
+class _SessionDetailSheet extends StatelessWidget {
+  final WorkoutSession session;
+  const _SessionDetailSheet({required this.session});
