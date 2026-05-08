@@ -58,4 +58,11 @@ class _ProgramCard extends StatelessWidget {
          child: Column(
           children: [
             // ── Coloured hero ────────────────────────────
-            
+             Stack(
+              children: [
+                Container(
+                  width: double.infinity,
+                  padding: const EdgeInsets.all(16),
+                  decoration: BoxDecoration(gradient: program.headerGradient),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
