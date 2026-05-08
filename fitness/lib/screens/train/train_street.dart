@@ -107,3 +107,18 @@ class _ProgramCard extends StatelessWidget {
                           rightLabel:
                               '${(program.progress * 100).round()}%',
                         ),
+                         ],
+                    ],
+                  ),
+                ),
+                // Top sheen
+                Positioned(
+                  top: 0, left: 0, right: 0,
+                  child: Container(
+                    height: 1,
+                    decoration: const BoxDecoration(
+                        gradient: AppColors.hairlineGradient),
+                  ),
+                ),
+              ],
+            ),
