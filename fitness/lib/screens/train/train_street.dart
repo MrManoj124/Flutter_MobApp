@@ -199,3 +199,16 @@ class _SessionDetailSheet extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 16),
+
+          // Header
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: Row(
+              children: [
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(session.focus.toUpperCase(),
+                          style: AppTextStyles.eyebrow(size: 8)),
+                      const SizedBox(height: 4),
