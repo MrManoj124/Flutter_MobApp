@@ -279,3 +279,15 @@ class _SessionDetailSheet extends StatelessWidget {
                                         size: 8,
                                         color: AppColors.textMuted)),
                               ),
+
+                      ),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: Text(ex.name,
+                            style: AppTextStyles.bodyMedium(
+                              size: 12,
+                              color: ex.completed
+                                  ? AppColors.gold
+                                  : AppColors.text,
+                            )),
+                      ),
