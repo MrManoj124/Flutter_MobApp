@@ -303,3 +303,23 @@ class _SessionDetailSheet extends StatelessWidget {
               },
             ),
           ),
+
+           // Start CTA
+          Padding(
+            padding:
+                const EdgeInsets.fromLTRB(20, 8, 20, 20),
+            child: SizedBox(
+              width: double.infinity,
+              child: GoldButton(
+                label: 'Start Session →',
+                verticalPadding: 14,
+                fontSize: 11,
+                onTap: () => Navigator.pop(context),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
