@@ -42,3 +42,32 @@ class WorkoutSession {
   double get progress =>
       exercises.isEmpty ? 0 : completedCount / exercises.length;
 }
+
+// create Program model with id, name, level, daysPerWeek, totalWeeks, currentWeek, description, headerGradient, sessions, isActive
+class Program {
+  final String id;
+  final String name;
+  final String level;
+  final String daysPerWeek;
+  final int totalWeeks;
+  final int currentWeek;
+  final String description;
+  final LinearGradient headerGradient;
+  final List<WorkoutSession> sessions;
+  final bool isActive;
+
+  const Program({
+    required this.id,
+    required this.name,
+    required this.level,
+    required this.daysPerWeek,
+    required this.totalWeeks,
+    required this.currentWeek,
+    required this.description,
+    required this.headerGradient,
+    required this.sessions,
+    this.isActive = false,
+  });
+
+  double get progress => totalWeeks == 0 ? 0 : currentWeek / totalWeeks;
+}
