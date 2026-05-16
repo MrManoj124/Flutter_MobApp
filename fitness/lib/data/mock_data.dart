@@ -152,3 +152,30 @@ final mockProducts = [
     category: ProductCategory.apparel,
   ),
 ];
+
+
+// ── Articles ───────────────────────────────────────────────────
+const mockArticles = [
+  Article(
+    id: 'a1',
+    title: 'Bulk vs Cut — The Definitive Guide',
+    category: 'Nutrition',
+    readTime: '6 min read',
+    emoji: '🥗',
+    isNew: true,
+  ),
+  Article(
+    id: 'a2',
+    title: 'Why Sleep Is Your Secret Weapon',
+    category: 'Recovery',
+    readTime: '4 min read',
+    emoji: '😴',
+  ),
+  Article(
+    id: 'a3',
+    title: 'The Science of Progressive Overload',
+    category: 'Training',
+    readTime: '8 min read',
+    emoji: '📈',
+  ),
+];
