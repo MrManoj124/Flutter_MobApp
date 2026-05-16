@@ -74,7 +74,9 @@ class _LuxBottomNav extends StatelessWidget{
         color : AppColors.surface,
         border : Border(top : BorderSide(color : AppColors.goldBorder)),
       ),
-      
+      child: SafeArea(
+
+      ),
     )
 
 }
