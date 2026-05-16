@@ -67,4 +67,6 @@ class _LuxBottomNav extends StatelessWidget{
     required this.onTap,
   })
 
+  @override
+  
 }
