@@ -32,3 +32,60 @@ const deadliftExercises = [
   Exercise(name: 'Leg Curls', sets: '3', reps: '12–15', rest: '60s', completed: false),
   Exercise(name: 'Calf Raises', sets: '4', reps: '20', rest: '45s', completed: false),
 ];
+
+// ── Programs ───────────────────────────────────────────────────
+final mockPrograms = [
+  Program(
+    id: 'p1',
+    name: 'Strength Beast',
+    level: 'Advanced',
+    daysPerWeek: '5 days / wk',
+    totalWeeks: 12,
+    currentWeek: 8,
+    description: 'Powerlifting · Hypertrophy · Raw Strength',
+    headerGradient: AppColors.programRed,
+    isActive: true,
+    sessions: [
+      WorkoutSession(
+        id: 's1',
+        name: 'Push Day III',
+        focus: 'Chest · Shoulders · Triceps',
+        duration: '45 min',
+        dayNumber: 3,
+        exercises: pushDayExercises,
+        completedCount: 3,
+      ),
+      WorkoutSession(
+        id: 's2',
+        name: 'Pull Day II',
+        focus: 'Back · Biceps · Rear Delts',
+        duration: '50 min',
+        dayNumber: 4,
+        exercises: deadliftExercises,
+        completedCount: 0,
+      ),
+    ],
+  ),
+  Program(
+    id: 'p2',
+    name: 'Fat Shredder',
+    level: 'Intermediate',
+    daysPerWeek: '4 days / wk',
+    totalWeeks: 8,
+    currentWeek: 0,
+    description: 'HIIT · Core · Cardio Conditioning',
+    headerGradient: AppColors.programGreen,
+    sessions: [],
+  ),
+  Program(
+    id: 'p3',
+    name: 'Beginner Builder',
+    level: 'Beginner',
+    daysPerWeek: '3 days / wk',
+    totalWeeks: 6,
+    currentWeek: 0,
+    description: 'Full Body · Form First · Mobility',
+    headerGradient: AppColors.programNeutral,
+    sessions: [],
+  ),
+];
