@@ -7,5 +7,9 @@ import 'train/train_screen.dart';
 import 'profile/profile_screen.dart';
 
 class AppShell extends StatefulWidget{
-  
+  const AppShell({super.key});
+
+  @override 
+  State<AppShell> createState() => _AppShellState();
 }
+
