@@ -6,3 +6,6 @@ import 'shop/shop_screen.dart';
 import 'train/train_screen.dart';
 import 'profile/profile_screen.dart';
 
+class AppShell extends StatefulWidget{
+  
+}
