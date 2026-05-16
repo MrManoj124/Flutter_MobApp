@@ -79,6 +79,51 @@ class _LuxBottomNav extends StatelessWidget{
         child : SizedBox(
           height: 60,
           child: Row(
+             children: items.asMap().entries.map((e) {
+              final isActive = e.key == currentIndex;
+              return Expanded(
+                child: GestureDetector(
+                  onTap: () => onTap(e.key),
+                  behavior: HitTestBehavior.opaque,
+                  child: AnimatedContainer(
+                    duration: const Duration(milliseconds: 200),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        AnimatedContainer(
+                          duration: const Duration(milliseconds: 200),
+                          width: 36, height: 36,
+                          decoration: BoxDecoration(
+                            color: isActive
+                                ? AppColors.goldDim
+                                : Colors.transparent,
+                            borderRadius: BorderRadius.circular(10),
+                            boxShadow: isActive
+                                ? [
+                                    BoxShadow(
+                                      color:
+                                          AppColors.gold.withOpacity(0.12),
+                                      blurRadius: 12,
+                                    )
+                                  ]
+                                : null,
+                          ),
+                           child: Icon(
+                            e.value.icon,
+                            size: 18,
+                            color: isActive
+                                ? AppColors.gold
+                                : AppColors.textDim,
+                          ),
+                        ),
+                        const SizedBox(height: 3),
+                        Text(
+                          e.value.label.toUpperCase(),
+                          style: AppTextStyles.navLabel(
+                            color: isActive
+                                ? AppColors.gold
+                                : AppColors.textDim,
+                          ),
         )
       ),
     )
