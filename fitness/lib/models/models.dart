@@ -18,3 +18,27 @@ class Exercise {
     this.completed = false,
   });
 }
+
+// create WorkoutSession model with id, name, focus, duration, dayNumber, exercises, completedCount
+class WorkoutSession {
+  final String id;
+  final String name;
+  final String focus;
+  final String duration;
+  final int dayNumber;
+  final List<Exercise> exercises;
+  final int completedCount;
+
+  const WorkoutSession({
+    required this.id,
+    required this.name,
+    required this.focus,
+    required this.duration,
+    required this.dayNumber,
+    required this.exercises,
+    required this.completedCount,
+  });
+
+  double get progress =>
+      exercises.isEmpty ? 0 : completedCount / exercises.length;
+}
