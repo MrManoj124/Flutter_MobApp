@@ -21,5 +21,12 @@ class _AppShellState extends State<AppShell>{
     ShopScreen(),
     TrainScreen(),
     ProfileScreen(),
+  ];
+
+  static const _navItems = [
+     _NavItem(icon: Icons.grid_view_rounded, label: 'Home'),
+    _NavItem(icon: Icons.storefront_outlined, label: 'Shop'),
+    _NavItem(icon: Icons.bolt_outlined, label: 'Train'),
+    _NavItem(icon: Icons.person_outline_rounded, label: 'Profile'),
   ]
 }
