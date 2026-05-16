@@ -62,6 +62,9 @@ class _LuxBottomNav extends StatelessWidget{
   final ValueChanged<int> onTap;
 
   const _LuxBottomNav({
-    re
+    required this.currentIndex,
+    required this.items,
+    required this.onTap,
   })
+
 }
