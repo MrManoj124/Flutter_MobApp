@@ -40,7 +40,10 @@ class _AppShellState extends State<AppShell>{
           index : _currentIndex,
           children : _screens,
         ),
-        bottomNavigationBar: ,
+        bottomNavigationBar: _LuxBottomNav(
+          currentIndex: _currentIndex,
+          items: _navItems,
+          onTap: (i) => setState(() => _currentIndex = i),
       )
     )
   }
