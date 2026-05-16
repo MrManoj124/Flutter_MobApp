@@ -13,3 +13,13 @@ const mockUser = UserProfile(
   weeklyGoalPercent: 78,
   todayKcal: 820,
 );
+
+// Exercises
+const pushDayExercises = [
+  Exercise(name: 'Barbell Bench Press', sets: '4', reps: '8–10', rest: '90s', completed: true),
+  Exercise(name: 'Incline Dumbbell Press', sets: '3', reps: '10–12', rest: '75s', completed: true),
+  Exercise(name: 'Cable Flyes', sets: '3', reps: '12–15', rest: '60s', completed: true),
+  Exercise(name: 'Overhead Press', sets: '4', reps: '8–10', rest: '90s', completed: false),
+  Exercise(name: 'Lateral Raises', sets: '3', reps: '15', rest: '45s', completed: false),
+  Exercise(name: 'Tricep Pushdowns', sets: '3', reps: '12–15', rest: '60s', completed: false),
+];
