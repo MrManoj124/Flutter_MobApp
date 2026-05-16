@@ -33,7 +33,15 @@ class _AppShellState extends State<AppShell>{
   @override
   Widget build(BuildContext context){
     return AnnotationRegion<SystemUiOverStyle>(
-      
+      value : SystemUiOverlayStyle.light,
+      child : Scaffold(
+        backgroundColor: AppColors.black,
+        body : IndexedStack(
+          index : _currentIndex,
+          children : _screens,
+        ),
+        bottomNavigationBar: ,
+      )
     )
   }
 }
