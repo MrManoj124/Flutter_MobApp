@@ -127,5 +127,6 @@ class _LuxBottomNav extends StatelessWidget{
         )
       ),
     )
+             }).toList(),
 
 }
