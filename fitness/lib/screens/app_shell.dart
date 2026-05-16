@@ -55,3 +55,13 @@ class _NavItem{
   final String label;
   const _NavItem({required this.icon, required this.label});
 }
+
+class _LuxBottomNav extends StatelessWidget{
+  final int currentIndex;
+  final List<_NavItem> items;
+  final ValueChanged<int> onTap;
+
+  const _LuxBottomNav({
+    re
+  })
+}
