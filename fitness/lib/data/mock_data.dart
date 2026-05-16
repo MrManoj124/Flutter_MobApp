@@ -89,3 +89,66 @@ final mockPrograms = [
     sessions: [],
   ),
 ];
+
+WorkoutSession get todaySession => mockPrograms[0].sessions[0];
+
+
+// ── Products ───────────────────────────────────────────────────
+final mockProducts = [
+  Product(
+    id: 'pr1',
+    name: 'Whey Pro+',
+    subtitle: '2.5 kg · Chocolate',
+    price: 49,
+    emoji: '🥛',
+    imageBackground: const Color(0xFF1A1208),
+    category: ProductCategory.supplements,
+  ),
+  Product(
+    id: 'pr2',
+    name: 'Grip Gloves',
+    subtitle: 'M / L / XL',
+    price: 24,
+    emoji: '🧤',
+    imageBackground: const Color(0xFF0D120D),
+    category: ProductCategory.gear,
+  ),
+  Product(
+    id: 'pr3',
+    name: 'Pre-Workout',
+    subtitle: '300 g · Berry Blast',
+    price: 35,
+    emoji: '⚡',
+    imageBackground: const Color(0xFF0D0D1A),
+    category: ProductCategory.supplements,
+  ),
+  Product(
+    id: 'pr4',
+    name: 'Resist. Band',
+    subtitle: '3-pack · Heavy',
+    price: 19,
+    emoji: '🏋️',
+    imageBackground: const Color(0xFF12100A),
+    category: ProductCategory.gear,
+  ),
+  Product(
+    id: 'pr5',
+    name: 'Creatine HCL',
+    subtitle: '300 g · Unflavoured',
+    price: 28,
+    emoji: '💊',
+    imageBackground: const Color(0xFF0A0A14),
+    category: ProductCategory.supplements,
+    isOnSale: true,
+    originalPrice: 38,
+  ),
+  Product(
+    id: 'pr6',
+    name: 'Training Tee',
+    subtitle: 'S / M / L · Black',
+    price: 55,
+    emoji: '👕',
+    imageBackground: const Color(0xFF0E0E0E),
+    category: ProductCategory.apparel,
+  ),
+];
