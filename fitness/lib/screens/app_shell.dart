@@ -28,5 +28,8 @@ class _AppShellState extends State<AppShell>{
     _NavItem(icon: Icons.storefront_outlined, label: 'Shop'),
     _NavItem(icon: Icons.bolt_outlined, label: 'Train'),
     _NavItem(icon: Icons.person_outline_rounded, label: 'Profile'),
-  ]
+  ];
+
+  @override
+  
 }
