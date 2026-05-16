@@ -50,13 +50,13 @@ class _AppShellState extends State<AppShell> {
   }
 }
 
-class _NavItem{
+class _NavItem {
   final IconData icon;
   final String label;
   const _NavItem({required this.icon, required this.label});
 }
 
-class _LuxBottomNav extends StatelessWidget{
+class _LuxBottomNav extends StatelessWidget {
   final int currentIndex;
   final List<_NavItem> items;
   final ValueChanged<int> onTap;
@@ -65,21 +65,21 @@ class _LuxBottomNav extends StatelessWidget{
     required this.currentIndex,
     required this.items,
     required this.onTap,
-  })
+  });
 
   @override
-  Widget build (BuildContext context)
+  Widget build(BuildContext context) {
     return Container(
-      decoration : const BoxDecoration(
-        color : AppColors.surface,
-        border : Border(top : BorderSide(color : AppColors.goldBorder)),
+      decoration: const BoxDecoration(
+        color: AppColors.surface,
+        border: Border(top: BorderSide(color: AppColors.goldBorder)),
       ),
       child: SafeArea(
-        top : false,
-        child : SizedBox(
+        top: false,
+        child: SizedBox(
           height: 60,
           child: Row(
-             children: items.asMap().entries.map((e) {
+            children: items.asMap().entries.map((e) {
               final isActive = e.key == currentIndex;
               return Expanded(
                 child: GestureDetector(
@@ -108,7 +108,7 @@ class _LuxBottomNav extends StatelessWidget{
                                   ]
                                 : null,
                           ),
-                           child: Icon(
+                          child: Icon(
                             e.value.icon,
                             size: 18,
                             color: isActive
@@ -124,9 +124,16 @@ class _LuxBottomNav extends StatelessWidget{
                                 ? AppColors.gold
                                 : AppColors.textDim,
                           ),
-        )
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              );
+            }).toList(),
+          ),
+        ),
       ),
-    )
-             }).toList(),
-
+    );
+  }
 }
