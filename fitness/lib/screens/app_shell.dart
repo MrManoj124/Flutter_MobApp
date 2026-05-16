@@ -6,14 +6,14 @@ import 'shop/shop_screen.dart';
 import 'train/train_screen.dart';
 import 'profile/profile_screen.dart';
 
-class AppShell extends StatefulWidget{
+class AppShell extends StatefulWidget {
   const AppShell({super.key});
 
-  @override 
+  @override
   State<AppShell> createState() => _AppShellState();
 }
 
-class _AppShellState extends State<AppShell>{
+class _AppShellState extends State<AppShell> {
   int _currentIndex = 0;
 
   static const _screens = [
@@ -24,27 +24,34 @@ class _AppShellState extends State<AppShell>{
   ];
 
   static const _navItems = [
-     _NavItem(icon: Icons.grid_view_rounded, label: 'Home'),
+    _NavItem(icon: Icons.grid_view_rounded, label: 'Home'),
     _NavItem(icon: Icons.storefront_outlined, label: 'Shop'),
     _NavItem(icon: Icons.bolt_outlined, label: 'Train'),
     _NavItem(icon: Icons.person_outline_rounded, label: 'Profile'),
   ];
 
   @override
-  Widget build(BuildContext context){
-    return AnnotationRegion<SystemUiOverStyle>(
-      value : SystemUiOverlayStyle.light,
-      child : Scaffold(
+  Widget build(BuildContext context) {
+    return AnnotatedRegion<SystemUiOverlayStyle>(
+      value: SystemUiOverlayStyle.light,
+      child: Scaffold(
         backgroundColor: AppColors.black,
-        body : IndexedStack(
-          index : _currentIndex,
-          children : _screens,
+        body: IndexedStack(
+          index: _currentIndex,
+          children: _screens,
         ),
         bottomNavigationBar: _LuxBottomNav(
           currentIndex: _currentIndex,
           items: _navItems,
           onTap: (i) => setState(() => _currentIndex = i),
-      )
-    )
+        ),
+      ),
+    );
   }
+}
+
+class _NavItem{
+  final IconData icon;
+  final String label;
+  const _NavItem({required this.icon, required this.label});
 }
