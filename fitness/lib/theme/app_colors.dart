@@ -39,6 +39,24 @@ class AppColors {
     colors: [goldDeep, goldLight],
   );
 
+  static const LinearGradient surfaceGradient = LinearGradient(
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+    colors: [Color(0xFF1A1A1A), Color(0xFF0A0A0A)],
+  );
+
+  static const LinearGradient hairlineGradient = LinearGradient(
+    colors: [Colors.transparent, goldBorder, Colors.transparent],
+  );
+
+
+  // Program header gradients
+  static const LinearGradient programRed = LinearGradient(
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+    colors: [Color(0xFF1A0D04), Color(0xFF0D0602)],
+  );
+
 
 
 }
