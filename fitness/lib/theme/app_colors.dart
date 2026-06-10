@@ -9,4 +9,11 @@ class AppColors {
   static const Color surface2     = Color(0xFF181818);
   static const Color surface3     = Color(0xFF202020);
 
+  // ── Gold palette ───────────────────────────────
+  static const Color gold         = Color(0xFFC9A84C);
+  static const Color goldLight    = Color(0xFFE8C97A);
+  static const Color goldDeep     = Color(0xFF8B6914);
+  static const Color goldDim      = Color(0x2EC9A84C);   // 18% alpha
+  static const Color goldBorder   = Color(0x47C9A84C);   // 28% alpha
+
 }
