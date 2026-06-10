@@ -21,4 +21,18 @@ class AppColors {
   static const Color textMuted    = Color(0xFF7A7570);
   static const Color textDim      = Color(0xFF3A3530);
 
+  // ── Semantic ──────────────────────────────────
+  static const Color danger       = Color(0xFF8B3030);
+  static const Color dangerDim    = Color(0x1FB43030);
+
+  // ── Gradients ─────────────────────────────────
+  static const LinearGradient goldGradient = LinearGradient(
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+    colors: [goldLight, gold, goldDeep],
+    stops: [0.0, 0.5, 1.0],
+  );
+
+
+
 }
