@@ -33,6 +33,12 @@ class AppColors {
     stops: [0.0, 0.5, 1.0],
   );
 
+  static const LinearGradient goldHorizontal = LinearGradient(
+    begin: Alignment.centerLeft,
+    end: Alignment.centerRight,
+    colors: [goldDeep, goldLight],
+  );
+
 
 
 }
