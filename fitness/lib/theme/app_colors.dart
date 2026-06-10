@@ -16,4 +16,9 @@ class AppColors {
   static const Color goldDim      = Color(0x2EC9A84C);   // 18% alpha
   static const Color goldBorder   = Color(0x47C9A84C);   // 28% alpha
 
+  // ── Text ──────────────────────────────────────
+  static const Color text         = Color(0xFFF0EDE8);
+  static const Color textMuted    = Color(0xFF7A7570);
+  static const Color textDim      = Color(0xFF3A3530);
+
 }
