@@ -6,4 +6,16 @@ import 'app_colors.dart';
 class AppTheme {
   AppTheme._();
 
+  static ThemeData get dark => ThemeData(
+        useMaterial3: true,
+        brightness: Brightness.dark,
+        scaffoldBackgroundColor: AppColors.black,
+        colorScheme: const ColorScheme.dark(
+          primary: AppColors.gold,
+          secondary: AppColors.goldLight,
+          surface: AppColors.surface,
+          onPrimary: AppColors.black,
+          onSecondary: AppColors.black,
+          onSurface: AppColors.text,
+        )
 }
