@@ -22,5 +22,13 @@ class AppTheme {
           bodyLarge: const TextStyle(color: AppColors.text),
           bodyMedium: const TextStyle(color: AppColors.textMuted),
         ),
-        
+        appBarTheme: const AppBarTheme(
+          backgroundColor: AppColors.black,
+          foregroundColor: AppColors.text,
+          elevation: 0,
+          systemOverlayStyle: SystemUiOverlayStyle(
+            statusBarBrightness: Brightness.dark,
+            statusBarIconBrightness: Brightness.light,
+          ),
+        ),
 }
