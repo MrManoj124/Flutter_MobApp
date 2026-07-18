@@ -17,5 +17,10 @@ class AppTheme {
           onPrimary: AppColors.black,
           onSecondary: AppColors.black,
           onSurface: AppColors.text,
-        )
+        ),
+        textTheme: GoogleFonts.dmSansTextTheme(ThemeData.dark().textTheme).copyWith(
+          bodyLarge: const TextStyle(color: AppColors.text),
+          bodyMedium: const TextStyle(color: AppColors.textMuted),
+        ),
+        
 }
