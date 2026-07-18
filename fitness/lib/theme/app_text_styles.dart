@@ -86,5 +86,19 @@ class AppTextStyles {
         color: color ?? AppColors.black,
       );
 
-  
+  static TextStyle navLabel({Color? color}) =>
+      GoogleFonts.dmSans(
+        fontSize: 7,
+        fontWeight: FontWeight.w500,
+        letterSpacing: 1.5,
+        color: color ?? AppColors.textDim,
+      );
+
+  static TextStyle menuItem({Color? color}) =>
+      GoogleFonts.dmSans(
+        fontSize: 13,
+        fontWeight: FontWeight.w400,
+        color: color ?? AppColors.text,
+        letterSpacing: 0.3,
+      );
 }
