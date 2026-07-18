@@ -29,5 +29,21 @@ class AppTextStyles {
         height: 1.0,
       );
 
-    
+  static TextStyle statNumber({double size = 18, Color? color}) =>
+      GoogleFonts.bebasNeue(
+        fontSize: size,
+        letterSpacing: 1,
+        color: color ?? AppColors.gold,
+        height: 1.0,
+      );
+
+  static TextStyle price({double size = 18, Color? color}) =>
+      GoogleFonts.bebasNeue(
+        fontSize: size,
+        letterSpacing: 1,
+        color: color ?? AppColors.gold,
+        height: 1.0,
+      );
+
+  
 }
