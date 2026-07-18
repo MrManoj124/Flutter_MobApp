@@ -37,5 +37,10 @@ class AppTheme {
           unselectedItemColor: AppColors.textDim,
           elevation: 0,
         ),
-        
+        dividerColor: AppColors.goldBorder,
+        cardColor: AppColors.surface,
+        iconTheme: const IconThemeData(color: AppColors.gold),
+        splashColor: AppColors.goldDim,
+        highlightColor: Colors.transparent,
+      );
 }
