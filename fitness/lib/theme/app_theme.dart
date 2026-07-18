@@ -31,4 +31,11 @@ class AppTheme {
             statusBarIconBrightness: Brightness.light,
           ),
         ),
+        bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+          backgroundColor: AppColors.surface,
+          selectedItemColor: AppColors.gold,
+          unselectedItemColor: AppColors.textDim,
+          elevation: 0,
+        ),
+        
 }
