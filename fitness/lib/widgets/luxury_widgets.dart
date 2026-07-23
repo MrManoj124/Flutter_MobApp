@@ -71,4 +71,36 @@ class LuxCard extends StatelessWidget {
     this.showTopSheen = true,
   });
 
-  
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: margin,
+      decoration: BoxDecoration(
+        color: gradient == null ? (background ?? AppColors.surface) : null,
+        gradient: gradient,
+        borderRadius: BorderRadius.circular(borderRadius),
+        border: Border.all(color: const Color(0x0FFFFFFF)),
+      ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(borderRadius),
+        child: Stack(
+          children: [
+            if (padding != null)
+              Padding(padding: padding!, child: child)
+            else
+              child,
+            if (showTopSheen)
+              Positioned(
+                top: 0, left: 0, right: 0,
+                child: Container(
+                  height: 1,
+                  decoration: const BoxDecoration(gradient: AppColors.hairlineGradient),
+                ),
+              ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
