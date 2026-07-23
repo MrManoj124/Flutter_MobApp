@@ -177,4 +177,53 @@ class GoldProgressBar extends StatelessWidget {
     this.rightLabel,
   });
 
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        if (leftLabel != null || rightLabel != null) ...[
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              if (leftLabel != null)
+                Text(leftLabel!, style: AppTextStyles.label()),
+              if (rightLabel != null)
+                Text(
+                  rightLabel!,
+                  style: AppTextStyles.label(color: AppColors.gold),
+                ),
+            ],
+          ),
+          const SizedBox(height: 5),
+        ],
+        LayoutBuilder(builder: (context, constraints) {
+          return Container(
+            height: 2,
+            width: constraints.maxWidth,
+            decoration: BoxDecoration(
+              color: AppColors.surface3,
+              borderRadius: BorderRadius.circular(1),
+            ),
+            child: FractionallySizedBox(
+              alignment: Alignment.centerLeft,
+              widthFactor: value.clamp(0.0, 1.0),
+              child: Container(
+                decoration: BoxDecoration(
+                  gradient: AppColors.goldHorizontal,
+                  borderRadius: BorderRadius.circular(1),
+                  boxShadow: [
+                    BoxShadow(
+                      color: AppColors.gold.withOpacity(0.4),
+                      blurRadius: 6,
+                    )
+                  ],
+                ),
+              ),
+            ),
+          );
+        }),
+      ],
+    );
+  }
 }
