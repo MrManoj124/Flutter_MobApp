@@ -48,3 +48,27 @@ class GoldPill extends StatelessWidget {
   }
 }
 
+// ────────────────────────────────────────────────────────────────
+// LUXURY CARD
+// ────────────────────────────────────────────────────────────────
+class LuxCard extends StatelessWidget {
+  final Widget child;
+  final EdgeInsetsGeometry margin;
+  final EdgeInsetsGeometry? padding;
+  final Color? background;
+  final Gradient? gradient;
+  final double borderRadius;
+  final bool showTopSheen;
+
+  const LuxCard({
+    super.key,
+    required this.child,
+    this.margin = const EdgeInsets.symmetric(horizontal: 16, vertical: 0),
+    this.padding,
+    this.background,
+    this.gradient,
+    this.borderRadius = 12,
+    this.showTopSheen = true,
+  });
+
+  
