@@ -317,3 +317,21 @@ class GoldGhostButton extends StatelessWidget {
     );
   }
 }
+
+// ────────────────────────────────────────────────────────────────
+// HERO HEADER
+// ────────────────────────────────────────────────────────────────
+class ScreenHeader extends StatelessWidget {
+  final String eyebrow;
+  final String title;
+  final Widget? trailing;
+  final Widget? subtitle;
+
+  const ScreenHeader({
+    super.key,
+    required this.eyebrow,
+    required this.title,
+    this.trailing,
+    this.subtitle,
+  });
+}
