@@ -275,3 +275,45 @@ class GoldButton extends StatelessWidget {
     );
   }
 }
+
+// ────────────────────────────────────────────────────────────────
+// GHOST BUTTON — outlined gold
+// ────────────────────────────────────────────────────────────────
+class GoldGhostButton extends StatelessWidget {
+  final String label;
+  final VoidCallback? onTap;
+  final double horizontalPadding;
+  final double verticalPadding;
+  final double fontSize;
+
+  const GoldGhostButton({
+    super.key,
+    required this.label,
+    this.onTap,
+    this.horizontalPadding = 18,
+    this.verticalPadding = 9,
+    this.fontSize = 9,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        padding: EdgeInsets.symmetric(
+          horizontal: horizontalPadding,
+          vertical: verticalPadding,
+        ),
+        decoration: BoxDecoration(
+          color: Colors.transparent,
+          border: Border.all(color: AppColors.goldBorder),
+          borderRadius: BorderRadius.circular(6),
+        ),
+        child: Text(
+          label.toUpperCase(),
+          style: AppTextStyles.button(size: fontSize, color: AppColors.gold),
+        ),
+      ),
+    );
+  }
+}
