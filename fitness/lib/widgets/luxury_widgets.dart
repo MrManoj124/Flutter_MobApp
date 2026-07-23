@@ -376,3 +376,32 @@ class ScreenHeader extends StatelessWidget {
     );
   }
 }
+
+// ────────────────────────────────────────────────────────────────
+// AVATAR RING
+// ────────────────────────────────────────────────────────────────
+class AvatarRing extends StatelessWidget {
+  final String emoji;
+  final double size;
+  const AvatarRing({super.key, required this.emoji, this.size = 38});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: size,
+      height: size,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        color: AppColors.surface2,
+        border: Border.all(color: AppColors.goldBorder),
+        boxShadow: [
+          BoxShadow(
+            color: AppColors.gold.withOpacity(0.12),
+            blurRadius: 16,
+          )
+        ],
+      ),
+      child: Center(child: Text(emoji, style: TextStyle(fontSize: size * 0.4))),
+    );
+  }
+}
