@@ -162,3 +162,19 @@ class StatCell extends StatelessWidget {
   }
 }
 
+// ────────────────────────────────────────────────────────────────
+// GOLD PROGRESS BAR
+// ────────────────────────────────────────────────────────────────
+class GoldProgressBar extends StatelessWidget {
+  final double value; // 0.0 → 1.0
+  final String? leftLabel;
+  final String? rightLabel;
+
+  const GoldProgressBar({
+    super.key,
+    required this.value,
+    this.leftLabel,
+    this.rightLabel,
+  });
+
+}
