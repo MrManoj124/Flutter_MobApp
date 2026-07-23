@@ -246,4 +246,32 @@ class GoldButton extends StatelessWidget {
     this.verticalPadding = 9,
     this.fontSize = 9,
   });
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        padding: EdgeInsets.symmetric(
+          horizontal: horizontalPadding,
+          vertical: verticalPadding,
+        ),
+        decoration: BoxDecoration(
+          gradient: AppColors.goldGradient,
+          borderRadius: BorderRadius.circular(6),
+          boxShadow: [
+            BoxShadow(
+              color: AppColors.gold.withOpacity(0.25),
+              blurRadius: 16,
+              offset: const Offset(0, 4),
+            )
+          ],
+        ),
+        child: Text(
+          label.toUpperCase(),
+          style: AppTextStyles.button(size: fontSize),
+        ),
+      ),
+    );
+  }
 }
