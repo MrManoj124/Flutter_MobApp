@@ -227,3 +227,23 @@ class GoldProgressBar extends StatelessWidget {
     );
   }
 }
+
+// ────────────────────────────────────────────────────────────────
+// CTA BUTTON — solid gold
+// ────────────────────────────────────────────────────────────────
+class GoldButton extends StatelessWidget {
+  final String label;
+  final VoidCallback? onTap;
+  final double horizontalPadding;
+  final double verticalPadding;
+  final double fontSize;
+
+  const GoldButton({
+    super.key,
+    required this.label,
+    this.onTap,
+    this.horizontalPadding = 18,
+    this.verticalPadding = 9,
+    this.fontSize = 9,
+  });
+}
