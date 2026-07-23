@@ -334,4 +334,45 @@ class ScreenHeader extends StatelessWidget {
     this.trailing,
     this.subtitle,
   });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.fromLTRB(16, 16, 16, 14),
+      child: Stack(
+        children: [
+          // Ambient glow
+          Positioned(
+            top: -40, right: -20,
+            child: Container(
+              width: 120, height: 120,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                gradient: RadialGradient(
+                  colors: [
+                    AppColors.gold.withOpacity(0.07),
+                    Colors.transparent,
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(eyebrow.toUpperCase(), style: AppTextStyles.eyebrow()),
+              const SizedBox(height: 4),
+              Text(title.toUpperCase(), style: AppTextStyles.display()),
+              if (subtitle != null) ...[
+                const SizedBox(height: 6),
+                subtitle!,
+              ],
+            ],
+          ),
+          if (trailing != null)
+            Positioned(top: 0, right: 0, child: trailing!),
+        ],
+      ),
+    );
+  }
 }
