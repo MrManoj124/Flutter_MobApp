@@ -104,3 +104,43 @@ class LuxCard extends StatelessWidget {
   }
 }
 
+// ────────────────────────────────────────────────────────────────
+// STAT STRIP
+// ────────────────────────────────────────────────────────────────
+class StatStrip extends StatelessWidget {
+  final List<StatCell> cells;
+  const StatStrip({super.key, required this.cells});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.symmetric(horizontal: 16),
+      decoration: BoxDecoration(
+        color: AppColors.surface,
+        borderRadius: BorderRadius.circular(10),
+        border: Border.all(color: AppColors.goldBorder),
+      ),
+      child: IntrinsicHeight(
+        child: Row(
+          children: cells.asMap().entries.map((e) {
+            final isLast = e.key == cells.length - 1;
+            return Expanded(
+              child: Container(
+                decoration: BoxDecoration(
+                  border: isLast
+                      ? null
+                      : const Border(
+                          right: BorderSide(color: AppColors.goldBorder),
+                        ),
+                ),
+                padding: const EdgeInsets.symmetric(vertical: 10),
+                child: e.value,
+              ),
+            );
+          }).toList(),
+        ),
+      ),
+    );
+  }
+}
+
