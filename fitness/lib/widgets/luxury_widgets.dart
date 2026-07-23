@@ -144,3 +144,21 @@ class StatStrip extends StatelessWidget {
   }
 }
 
+class StatCell extends StatelessWidget {
+  final String value;
+  final String label;
+  const StatCell({super.key, required this.value, required this.label});
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Text(value, style: AppTextStyles.statNumber(size: 18)),
+        const SizedBox(height: 2),
+        Text(label.toUpperCase(), style: AppTextStyles.label()),
+      ],
+    );
+  }
+}
+
