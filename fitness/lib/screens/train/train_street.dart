@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-// import '../../theme/theme.dart';
-// import '../../data/mock_data.dart';
-// import '../../models/models.dart';
-// import '../../widgets/luxury_widgets.dart';
+import '../../theme/theme.dart';
+import '../../data/mock_data.dart';
+import '../../models/models.dart';
+import '../../widgets/luxury_widgets.dart';
 
 class TrainScreen extends StatelessWidget {
   const TrainScreen({super.key});
@@ -33,7 +33,7 @@ class TrainScreen extends StatelessWidget {
                     child: _ProgramCard(program: p),
                   )),
 
-                  const SizedBox(height:20);
+                  const SizedBox(height:20),
                   ],
           ),
         ),
