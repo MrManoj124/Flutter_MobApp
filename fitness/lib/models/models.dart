@@ -100,3 +100,28 @@ class Product {
     this.originalPrice,
   });
 }
+
+
+// ── User Model ─────────────────────────────────────────────────
+
+class UserProfile {
+  final String name;
+  final String tier;
+  final String memberSince;
+  final int streakDays;
+  final int totalSessions;
+  final int totalKcal;
+  final int weeklyGoalPercent;
+  final int todayKcal;
+
+  const UserProfile({
+    required this.name,
+    required this.tier,
+    required this.memberSince,
+    required this.streakDays,
+    required this.totalSessions,
+    required this.totalKcal,
+    required this.weeklyGoalPercent,
+    required this.todayKcal,
+  });
+}
