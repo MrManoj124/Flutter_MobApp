@@ -71,3 +71,32 @@ class Program {
 
   double get progress => totalWeeks == 0 ? 0 : currentWeek / totalWeeks;
 }
+
+
+// ── Shop Models ────────────────────────────────────────────────
+
+enum ProductCategory { all, supplements, gear, apparel, sale }
+
+class Product {
+  final String id;
+  final String name;
+  final String subtitle;
+  final double price;
+  final String emoji;
+  final Color imageBackground;
+  final ProductCategory category;
+  final bool isOnSale;
+  final double? originalPrice;
+
+  const Product({
+    required this.id,
+    required this.name,
+    required this.subtitle,
+    required this.price,
+    required this.emoji,
+    required this.imageBackground,
+    required this.category,
+    this.isOnSale = false,
+    this.originalPrice,
+  });
+}
