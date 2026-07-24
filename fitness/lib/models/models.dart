@@ -101,6 +101,26 @@ class Product {
   });
 }
 
+// ── Article Model ──────────────────────────────────────────────
+
+class Article {
+  final String id;
+  final String title;
+  final String category;
+  final String readTime;
+  final String emoji;
+  final bool isNew;
+
+  const Article({
+    required this.id,
+    required this.title,
+    required this.category,
+    required this.readTime,
+    required this.emoji,
+    this.isNew = false,
+  });
+}
+
 
 // ── User Model ─────────────────────────────────────────────────
 
