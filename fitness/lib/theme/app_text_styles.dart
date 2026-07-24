@@ -14,14 +14,15 @@ class AppTextStyles {
         height: 1.0,
       );
 
-      static TextStyle display({double size = 22, Color? color}) =>
+  static TextStyle display({double size = 22, Color? color}) =>
       GoogleFonts.bebasNeue(
         fontSize: size,
         letterSpacing: 3,
         color: color ?? AppColors.text,
         height: 1.0,
       );
-      static TextStyle cardTitle({double size = 16, Color? color}) =>
+
+  static TextStyle cardTitle({double size = 16, Color? color}) =>
       GoogleFonts.bebasNeue(
         fontSize: size,
         letterSpacing: 2,
