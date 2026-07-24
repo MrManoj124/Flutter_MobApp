@@ -7,9 +7,9 @@ class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
 
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     final user = mockUser;
-    
+
     return Scaffold(
       backgroundColor: AppColors.black,
       body: SafeArea(
@@ -17,7 +17,7 @@ class ProfileScreen extends StatelessWidget {
           physics: const BouncingScrollPhysics(),
           child: Column(
             children: [
-              // ── Profile hero ───
+              // ── Profile hero ─────────────────────────────
               Stack(
                 children: [
                   // Ambient glow
@@ -25,7 +25,7 @@ class ProfileScreen extends StatelessWidget {
                     top: 0, left: 0, right: 0,
                     child: Container(
                       height: 180,
-                       decoration: BoxDecoration(
+                      decoration: BoxDecoration(
                         gradient: RadialGradient(
                           center: Alignment.topCenter,
                           radius: 1.2,
@@ -48,7 +48,7 @@ class ProfileScreen extends StatelessWidget {
                             shape: BoxShape.circle,
                             color: AppColors.surface2,
                             border: Border.all(
-                              color: AppColors.goldBorder, width: 1.5),
+                                color: AppColors.goldBorder, width: 1.5),
                             boxShadow: [
                               BoxShadow(
                                 color: AppColors.gold.withOpacity(0.15),
@@ -64,7 +64,7 @@ class ProfileScreen extends StatelessWidget {
                         const SizedBox(height: 12),
                         Text(user.name.toUpperCase(),
                             style: AppTextStyles.display(size: 24)),
-                            const SizedBox(height: 4),
+                        const SizedBox(height: 4),
                         Text(
                           '${user.tier} · Since ${user.memberSince}'
                               .toUpperCase(),
@@ -84,7 +84,7 @@ class ProfileScreen extends StatelessWidget {
                               label: 'Share',
                               verticalPadding: 8,
                               onTap: () {},
-                              ),
+                            ),
                           ],
                         ),
                       ],
@@ -96,7 +96,7 @@ class ProfileScreen extends StatelessWidget {
               GoldHairline(),
               const SizedBox(height: 14),
 
-               // ── Stats ────────────────────────────────────
+              // ── Stats ────────────────────────────────────
               StatStrip(cells: [
                 StatCell(
                     value: '${user.totalSessions}', label: 'Sessions'),
@@ -108,15 +108,15 @@ class ProfileScreen extends StatelessWidget {
                     label: 'Kcal'),
               ]),
 
-              const SizeBox(height : 16),
+              const SizedBox(height: 16),
 
-              //Menu items
+              // ── Menu items ───────────────────────────────
               _MenuItem(
                 emoji: '📊',
                 label: 'Progress & Analytics',
                 badge: 'New',
                 onTap: () {},
-              )
+              ),
               _MenuItem(
                 emoji: '🏅',
                 label: 'Achievements',
@@ -145,31 +145,31 @@ class ProfileScreen extends StatelessWidget {
                 isDanger: true,
               ),
 
-              const SizedBox(height : 20),
+              const SizedBox(height: 20),
+
               // ── Footer ───────────────────────────────────
               Padding(
-                padding : const EdgeInsets.symmetric(vertical : 8),
+                padding: const EdgeInsets.symmetric(vertical: 8),
                 child: Text(
                   'IRONVAULT · v1.0.0',
                   style: AppTextStyles.label(
                       size: 9, color: AppColors.textDim),
                 ),
               ),
-
-              const SizedBox(height : 16),
+              const SizedBox(height: 16),
             ],
           ),
         ),
       ),
-    ),
+    );
   }
 }
 
 class _MenuItem extends StatelessWidget {
   final String emoji;
   final String label;
-  final String ? badge;
-  final VoidCallBack? onTap;
+  final String? badge;
+  final VoidCallback? onTap;
   final bool isDanger;
 
   const _MenuItem({
@@ -181,8 +181,8 @@ class _MenuItem extends StatelessWidget {
   });
 
   @override
-  Widget build(BuildContext context){
-    return Inkwell(
+  Widget build(BuildContext context) {
+    return InkWell(
       onTap: onTap,
       splashColor: AppColors.goldDim,
       highlightColor: Colors.transparent,
@@ -192,13 +192,59 @@ class _MenuItem extends StatelessWidget {
           border: Border(
               bottom: BorderSide(color: Color(0x0AFFFFFF))),
         ),
-        child : Row(
-          children : [
-            //Icon badge
-            Container(,
-            )
-          ]
-          )
-    )
-  })
+        child: Row(
+          children: [
+            // Icon badge
+            Container(
+              width: 32, height: 32,
+              decoration: BoxDecoration(
+                color: isDanger
+                    ? AppColors.dangerDim
+                    : AppColors.goldDim,
+                border: Border.all(
+                    color: isDanger
+                        ? AppColors.danger.withOpacity(0.3)
+                        : AppColors.goldBorder),
+                borderRadius: BorderRadius.circular(9),
+              ),
+              child: Center(
+                child: Text(emoji,
+                    style: const TextStyle(fontSize: 14)),
+              ),
+            ),
+            const SizedBox(width: 14),
+            Expanded(
+              child: Text(
+                label,
+                style: AppTextStyles.menuItem(
+                    color: isDanger
+                        ? AppColors.danger
+                        : AppColors.text),
+              ),
+            ),
+            if (badge != null) ...[
+              Container(
+                padding: const EdgeInsets.symmetric(
+                    horizontal: 8, vertical: 2),
+                decoration: BoxDecoration(
+                  color: AppColors.goldDim,
+                  border: Border.all(color: AppColors.goldBorder),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Text(
+                  badge!.toUpperCase(),
+                  style: AppTextStyles.label(
+                      size: 8, color: AppColors.gold),
+                ),
+              ),
+              const SizedBox(width: 8),
+            ],
+            if (!isDanger)
+              const Icon(Icons.chevron_right,
+                  color: AppColors.textMuted, size: 16),
+          ],
+        ),
+      ),
+    );
+  }
 }
